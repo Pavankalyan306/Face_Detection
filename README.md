@@ -2,7 +2,7 @@
 Welcome to the Facial Recognition System project! This project uses Flask for the web application, face_recognition library for face recognition, and MySQL for efficient data storage.
 
 **Table of Contents**
-- [Features](#features)
+- [Features](#features)  
 - [Demo](#demo)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
