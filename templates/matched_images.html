@@ -1,0 +1,18 @@
+<!-- templates/matched_images.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matched Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Matched Images</h1>
+    <div class="matched-images-container">
+        {% for image_name in image_names %}
+            <img src="{{ url_for('static', filename='uploads/' + image_name) }}" alt="{{ image_name }}" class="matched-image">
+        {% endfor %}
+    </div>
+</body>
+</html>

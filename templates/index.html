@@ -1,0 +1,35 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Face Recognition</h1>
+    <div class="container">
+        <div class="image-container" id="uploadedImageContainer">
+            <label for="fileInput">Upload Image</label>
+            <input type="file" name="file" id="fileInput" accept=".jpg, .jpeg, .png">
+            <button type="button" onclick="uploadFile()">Upload</button>
+        </div>
+        <div class="image-container" id="knownFaceImageContainer">
+            <img id="knownFaceImage" src="{{ url_for('static', filename='known_faces/known_face.jpg') }}" alt="Known Face" style="max-width: 150px; max-height: 150px;">
+        </div>
+    </div>
+    <div id="result" class="result-container"></div>
+    <div id="loading" class="loader" style="display: none;"></div>
+    <div class="options-container">
+        <button type="button" onclick="reloadPage()">Reload</button>
+        <button type="button" onclick="resetPage()">Reset</button>
+    </div>
+    <div class="warning-container">
+        <div class="glass-blur">
+            <p>Warning: Face recognition in cyber words. For education purposes only. Just a prank!</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
