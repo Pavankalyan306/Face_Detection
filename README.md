@@ -17,7 +17,7 @@ Welcome to the Facial Recognition System project! This project uses Flask for th
 - User-friendly web application built with Flask, HTML, CSS, and JavaScript.
 
 **Demo**
-
+ 
 ![20240225233244](https://github.com/Pavankalyan306/Facial-Recognition-System/assets/154356480/d4fbe85a-efd7-43f0-88fc-e975c1d63946)
 
 
